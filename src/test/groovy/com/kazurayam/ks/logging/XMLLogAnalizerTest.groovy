@@ -74,6 +74,22 @@ public class XMLLogAnalyzerTest {
         assert output.size() > 0
     }
 
+    @Test
+    void test_counter_mega() {
+        Path xslt = xsltDir.resolve('counter.xsl')
+        Path input = findXML(reportsDir, '20211126_101124')
+        Path output = classOutputDir.resolve("test_counter_mega").resolve("count.xml")
+        Files.createDirectories(output.getParent())
+        //
+        XMLLogAnalyzer analyzer = new XMLLogAnalyzer()
+        analyzer.setXslt(xslt)
+        analyzer.setInput(input)
+        analyzer.setOutput(output)
+        analyzer.execute()
+        assert Files.exists(output)
+        assert output.size() > 0
+    }
+
 
     Path findXML(Path reportsDir, String timestamp) {
         List<Path> result = new ArrayList<Path>()

@@ -33,16 +33,29 @@
     </xsl:template>
 
     <xsl:key name="level" match="/log/record/level" use="."/>
+    <xsl:key name="message" match="/log/record/message" use="."/>
 
     <xsl:template match="log">
         <h1>count by level</h1>
         <table>
             <tbody>
                 <xsl:for-each select="/log/record/level[generate-id()=generate-id(key('level',.)[1])]">
-                    <xsl:variable name="levelValue" select="."/>
+                    <xsl:variable name="v" select="."/>
                     <tr>
                         <td><xsl:value-of select="."/></td>
-                        <td><xsl:value-of select="count(/log/record/level[text()=$levelValue])"/></td>
+                        <td><xsl:value-of select="count(/log/record/level[text()=$v])"/></td>
+                    </tr>
+                </xsl:for-each>
+            </tbody>
+        </table>
+        <h1>count by message</h1>
+        <table>
+            <tbody>
+                <xsl:for-each select="/log/record/message[generate-id()=generate-id(key('message',.)[1])]">
+                    <xsl:variable name="v" select="."/>
+                    <tr>
+                        <td><xsl:value-of select="."/></td>
+                        <td><xsl:value-of select="count(/log/record/message[text()=$v])"/></td>
                     </tr>
                 </xsl:for-each>
             </tbody>

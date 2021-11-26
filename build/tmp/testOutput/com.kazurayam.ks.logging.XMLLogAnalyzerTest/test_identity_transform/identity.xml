@@ -1,0 +1,202 @@
+cd
+<>2021-09-03T20:15:53<>1630667753891<>0<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startSuite<>1<>Start Test Suite : Test Suites/CURA/chronos_exam<>0<>false< name="rerunTestFailImmediately">false< name="retryCount">0< name="name">chronos_exam< name="description">
+< name="id">Test Suites/CURA/chronos_exam<>
+<>2021-09-03T20:15:53<>1630667753918<>1<>RUN_DATA<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>hostName = kazuakiurayama - kazuakinoair.airport<>0<>false< name="hostName">kazuakiurayama - kazuakinoair.airport<>
+<>2021-09-03T20:15:53<>1630667753919<>2<>RUN_DATA<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>os = Mac OS X 64bit<>0<>false< name="os">Mac OS X 64bit<>
+<>2021-09-03T20:15:53<>1630667753920<>3<>RUN_DATA<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>hostAddress = 192.168.0.10<>0<>false< name="hostAddress">192.168.0.10<>
+<>2021-09-03T20:15:53<>1630667753924<>4<>RUN_DATA<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>katalonVersion = 8.1.0.208<>0<>false< name="katalonVersion">8.1.0.208<>
+<>2021-09-03T20:15:53<>1630667753988<>5<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#VisualTestingListenerImpl() Execution Profile &amp;apos;CURA_DevelopmentEnv&amp;apos; is applied<>0<>false<>
+<>2021-09-03T20:15:54<>1630667754063<>6<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#resolveProjectDir() AUXILIARY_VT_PROJECTS_DIR is not defined in vt-config.json. Materials and Storage dir will be located in /Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio<>0<>false<>
+<>2021-09-03T20:15:54<>1630667754070<>7<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#resolveProjectDir() AUXILIARY_VT_PROJECTS_DIR is not defined in vt-config.json. Materials and Storage dir will be located in /Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio<>0<>false<>
+<>2021-09-03T20:15:54<>1630667754072<>8<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#VisualTestingListenerImpl() materialsDir=/Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Materials<>0<>false<>
+<>2021-09-03T20:15:54<>1630667754072<>9<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#VisualTestingListenerImpl() storageDir=/Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Storage<>0<>false<>
+<>2021-09-03T20:15:54<>1630667754074<>10<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#VisualTestingListenerImpl() reportFolder=/Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Reports/20210903_201220/CURA/chronos_exam/20210903_201226<>0<>false<>
+<>2021-09-03T20:15:54<>1630667754098<>11<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#VisualTestingListenerImpl() reportsDir=/Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Reports<>0<>false<>
+<>2021-09-03T20:15:54<>1630667754108<>12<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start listener action : beforeTestSuite<>0<>false<>
+<>2021-09-03T20:15:54<>1630667754130<>14<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : listener.beforeTestSuite(testSuiteContext)<>1<>false< name="startLine">21< name="stepIndex">1<>
+<>2021-09-03T20:15:54<>1630667754585<>15<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestSuite testSuiteId=Test Suites/CURA/chronos_exam<>0<>false<>
+<>2021-09-03T20:15:54<>1630667754586<>16<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestSuite executionProfile=CURA_DevelopmentEnv<>0<>false<>
+<>2021-09-03T20:15:54<>1630667754587<>17<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestSuite testSuiteTimestamp=20210903_201226<>0<>false<>
+<>2021-09-03T20:15:54<>1630667754608<>18<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestSuite creating MaterialRepository<>0<>false<>
+<>2021-09-03T20:15:55<>1630667755152<>19<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestSuite created MaterialRepository<>0<>false<>
+<>2021-09-03T20:15:55<>1630667755153<>20<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestSuite creating MaterialStorage<>0<>false<>
+<>2021-09-03T20:15:55<>1630667755226<>21<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestSuite created MaterialStorage<>0<>false<>
+<>2021-09-03T20:15:55<>1630667755229<>22<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestSuite creating ReportsAccessor<>0<>false<>
+<>2021-09-03T20:15:55<>1630667755276<>23<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestSuite created ReportsAccessor<>0<>false<>
+<>2021-09-03T20:15:55<>1630667755444<>24<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>GlobalVariable.VT_LAST_APPLIED_EXECUTION_PROFILE has value &amp;quot;CURA_DevelopmentEnv&amp;quot; loaded from /Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/build/tmp/GlobalVariables.json<>0<>false<>
+<>2021-09-03T20:15:55<>1630667755474<>25<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>GlobalVariable.VT_LAST_EXECUTED_TESTSUITE_ID has value &amp;quot;CURA/chronos_capture&amp;quot; loaded from /Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/build/tmp/GlobalVariables.json<>0<>false<>
+<>2021-09-03T20:15:55<>1630667755476<>27<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : listener.beforeTestSuite(testSuiteContext)<>1<>false<>
+<>2021-09-03T20:15:55<>1630667755476<>28<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End listener action : beforeTestSuite<>0<>false<>
+<>2021-09-03T20:15:55<>1630667755773<>29<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startTest<>1<>Start Test Case : Test Cases/CURA/ImageDiff_chronos<>1<>false< name="name">Test Cases/CURA/ImageDiff_chronos< name="description">
+< name="id">Test Cases/CURA/ImageDiff_chronos< name="source">\Users\kazuakiurayama\katalon-workspace\VisualTestingInKatalonStudio\Test Cases\CURA\ImageDiff_chronos.tc< name="tag">
+< name="isOptional">false<>
+<>2021-09-03T20:15:55<>1630667755797<>31<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start listener action : beforeTestCase<>1<>false<>
+<>2021-09-03T20:15:55<>1630667755798<>33<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : listener.beforeTestCase(testCaseContext)<>1<>false< name="startLine">27< name="stepIndex">1<>
+<>2021-09-03T20:15:55<>1630667755854<>34<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestCase GlobalVariable.VT_CURRENT_TESTSUITE_ID is &amp;quot;Test Suites/CURA/chronos_exam&amp;quot;<>1<>false<>
+<>2021-09-03T20:15:55<>1630667755858<>35<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestCase GlobalVariable.VT_CURRENT_EXECUTION_PROFILE is &amp;quot;CURA_DevelopmentEnv&amp;quot;<>1<>false<>
+<>2021-09-03T20:15:55<>1630667755863<>36<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestCase GlobalVariable.VT_CURRENT_TESTSUITE_TIMESTAMP is &amp;quot;20210903_201226&amp;quot;<>1<>false<>
+<>2021-09-03T20:15:55<>1630667755867<>37<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestCase GlobalVariable.VT_CURRENT_TESTCASE_ID is &amp;quot;Test Cases/CURA/ImageDiff_chronos&amp;quot;<>1<>false<>
+<>2021-09-03T20:15:55<>1630667755876<>38<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestCase GlobalVariable.VT_MATERIAL_REPOSITORY is located at &amp;quot;/Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Materials&amp;quot;<>1<>false<>
+<>2021-09-03T20:15:55<>1630667755884<>39<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestCase GlobalVariable.VT_MATERIAL_STORAGE is located at &amp;quot;/Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Storage&amp;quot;<>1<>false<>
+<>2021-09-03T20:15:55<>1630667755891<>40<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>VisualTestingListenerImpl#beforeTestCase GlobalVariable.VT_REPORTS_ACCESSOR is located at &amp;quot;/Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Reports&amp;quot;<>1<>false<>
+<>2021-09-03T20:15:55<>1630667755892<>42<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : listener.beforeTestCase(testCaseContext)<>1<>false<>
+<>2021-09-03T20:15:55<>1630667755893<>43<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End listener action : beforeTestCase<>1<>false<>
+<>2021-09-03T20:15:56<>1630667756172<>44<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : assert GlobalVariableHelpers.isGlobalVariablePresent(LAST_EXECUTED_TESTSUITE_ID)<>1<>false< name="startLine">16< name="stepIndex">1<>
+<>2021-09-03T20:15:56<>1630667756175<>45<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : assert GlobalVariableHelpers.isGlobalVariablePresent(LAST_EXECUTED_TESTSUITE_ID)<>1<>false<>
+<>2021-09-03T20:15:56<>1630667756175<>46<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : TESTSUITE_ID = GlobalVariableHelpers.getGlobalVariableValue(LAST_EXECUTED_TESTSUITE_ID)<>1<>false< name="startLine">17< name="stepIndex">2<>
+<>2021-09-03T20:15:56<>1630667756181<>47<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : TESTSUITE_ID = GlobalVariableHelpers.getGlobalVariableValue(LAST_EXECUTED_TESTSUITE_ID)<>1<>false<>
+<>2021-09-03T20:15:56<>1630667756181<>48<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : EXECUTION_PROFILE = GlobalVariableHelpers.getGlobalVariableValue(LAST_APPLIED_EXECUTION_PROFILE)<>1<>false< name="startLine">18< name="stepIndex">3<>
+<>2021-09-03T20:15:56<>1630667756183<>49<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : EXECUTION_PROFILE = GlobalVariableHelpers.getGlobalVariableValue(LAST_APPLIED_EXECUTION_PROFILE)<>1<>false<>
+<>2021-09-03T20:15:56<>1630667756183<>50<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : options = 0).build()<>1<>false< name="startLine">20< name="stepIndex">4<>
+<>2021-09-03T20:15:56<>1630667756213<>51<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : options = 0).build()<>1<>false<>
+<>2021-09-03T20:15:56<>1630667756213<>52<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : imageDiffer = new com.kazurayam.visualtesting.ImageDiffer()<>1<>false< name="startLine">24< name="stepIndex">5<>
+<>2021-09-03T20:15:56<>1630667756224<>53<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : imageDiffer = new com.kazurayam.visualtesting.ImageDiffer()<>1<>false<>
+<>2021-09-03T20:15:56<>1630667756225<>54<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : result = imageDiffer.runChronos(TESTSUITE_ID, EXECUTION_PROFILE, options)<>1<>false< name="startLine">25< name="stepIndex">6<>
+<>2021-09-03T20:15:57<>1630667757425<>55<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#makeMaterialStats took 46 milliseconds for {&amp;quot;id&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;abbreviatedId&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;CURA.chronos_capture&amp;quot;},CURA.visitSite/pagesources/home.html<>1<>false<>
+<>2021-09-03T20:15:58<>1630667758625<>56<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#makeMaterialStats took 1199 milliseconds for {&amp;quot;id&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;abbreviatedId&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;CURA.chronos_capture&amp;quot;},CURA.visitSite/screenshots/appointment.php%23summary.png<>1<>false<>
+<>2021-09-03T20:15:59<>1630667759165<>57<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#makeMaterialStats took 538 milliseconds for {&amp;quot;id&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;abbreviatedId&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;CURA.chronos_capture&amp;quot;},CURA.visitSite/screenshots/default%23appointment.png<>1<>false<>
+<>2021-09-03T20:16:00<>1630667760159<>58<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#makeMaterialStats took 993 milliseconds for {&amp;quot;id&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;abbreviatedId&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;CURA.chronos_capture&amp;quot;},CURA.visitSite/screenshots/home.png<>1<>false<>
+<>2021-09-03T20:16:00<>1630667760517<>59<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#makeMaterialStats took 356 milliseconds for {&amp;quot;id&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;abbreviatedId&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;CURA.chronos_capture&amp;quot;},CURA.visitSite/screenshots/profile.php%23login.png<>1<>false<>
+<>2021-09-03T20:16:00<>1630667760922<>60<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#makeMaterialStats took 403 milliseconds for {&amp;quot;id&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;abbreviatedId&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;CURA.chronos_capture&amp;quot;},CURA.visitSite/screenshots/revisited.png<>1<>false<>
+<>2021-09-03T20:16:01<>1630667761852<>61<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>#makeMaterialStats took 929 milliseconds for {&amp;quot;id&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;abbreviatedId&amp;quot;: &amp;quot;CURA/chronos_capture&amp;quot;,&amp;quot;value&amp;quot;: &amp;quot;CURA.chronos_capture&amp;quot;},CURA.visitSite/screenshots/ホーム.png<>1<>false<>
+<>2021-09-03T20:16:05<>1630667765857<>62<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>Different CURA.chronos_exam/CURA_DevelopmentEnv/20210903_201226/CURA.ImageDiff_chronos/CURA.visitSite/screenshots/home(43.72)FAILED.png <>1<>false<>
+<>2021-09-03T20:16:05<>1630667765861<>63<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>&amp;gt;&amp;gt;&amp;gt; diffRatio(43.72) &amp;gt; criteria(31.59) expected(CURA.chronos_capture/CURA_DevelopmentEnv/20210623_225544/CURA.visitSite/screenshots/home.png) actual(CURA.chronos_capture/CURA_DevelopmentEnv/20210903_201224/CURA.visitSite/screenshots/home.png)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769256<>64<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>Different CURA.chronos_exam/CURA_DevelopmentEnv/20210903_201226/CURA.ImageDiff_chronos/CURA.visitSite/screenshots/ホーム(43.72)FAILED.png <>1<>false<>
+<>2021-09-03T20:16:09<>1630667769260<>65<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>&amp;gt;&amp;gt;&amp;gt; diffRatio(43.72) &amp;gt; criteria(31.59) expected(CURA.chronos_capture/CURA_DevelopmentEnv/20210623_225544/CURA.visitSite/screenshots/ホーム.png) actual(CURA.chronos_capture/CURA_DevelopmentEnv/20210903_201224/CURA.visitSite/screenshots/ホーム.png)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769296<>66<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>comparison-result-bundle.json files will be saved into /Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Materials/CURA.chronos_exam/CURA_DevelopmentEnv/20210903_201226/CURA.ImageDiff_chronos/comparison-result-bundle.json<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769310<>67<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>copied into /Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Materials/CURA.chronos_exam/CURA_DevelopmentEnv/20210903_201226/CURA.ImageDiff_chronos/comparison-result-bundle.json<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769311<>68<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : result = imageDiffer.runChronos(TESTSUITE_ID, EXECUTION_PROFILE, options)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769311<>69<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : callTestCase(findTestCase(&amp;quot;VT/reportImageDiffsList&amp;quot;), [&amp;quot;imageDiffer&amp;quot;:imageDiffer])<>1<>false< name="startLine">28< name="stepIndex">7<>
+<>2021-09-03T20:16:09<>1630667769416<>72<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startTest<>1<>Start Test Case : Test Cases/VT/reportImageDiffsList<>2<>false< name="name">Test Cases/VT/reportImageDiffsList< name="description">
+< name="id">Test Cases/VT/reportImageDiffsList< name="source">\Users\kazuakiurayama\katalon-workspace\VisualTestingInKatalonStudio\Test Cases\VT\reportImageDiffsList.tc< name="tag">
+< name="isOptional">false<>
+<>2021-09-03T20:16:09<>1630667769629<>74<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : assert imageDiffer != null<>1<>false< name="startLine">17< name="stepIndex">1<>
+<>2021-09-03T20:16:09<>1630667769630<>75<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : assert imageDiffer != null<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769631<>76<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : comparison = imageDiffer.getComparisonResultBundleFile()<>1<>false< name="startLine">20< name="stepIndex">2<>
+<>2021-09-03T20:16:09<>1630667769633<>77<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : comparison = imageDiffer.getComparisonResultBundleFile()<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769633<>78<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : assert comparison != null<>1<>false< name="startLine">21< name="stepIndex">3<>
+<>2021-09-03T20:16:09<>1630667769634<>79<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : assert comparison != null<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769635<>80<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : comment($comparison has been created)<>1<>false< name="startLine">22< name="stepIndex">4<>
+<>2021-09-03T20:16:09<>1630667769639<>81<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>/Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Materials/CURA.chronos_exam/CURA_DevelopmentEnv/20210903_201226/CURA.ImageDiff_chronos/comparison-result-bundle.json has been created<>2<>false<>
+<>2021-09-03T20:16:09<>1630667769639<>82<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : comment($comparison has been created)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769640<>83<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : lister = new com.kazurayam.visualtesting.ImageDiffsLister(comparison)<>1<>false< name="startLine">24< name="stepIndex">5<>
+<>2021-09-03T20:16:09<>1630667769651<>84<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : lister = new com.kazurayam.visualtesting.ImageDiffsLister(comparison)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769651<>85<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : mr = internal.GlobalVariable[MATERIAL_REPOSITORY.getName()]<>1<>false< name="startLine">26< name="stepIndex">6<>
+<>2021-09-03T20:16:09<>1630667769654<>86<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : mr = internal.GlobalVariable[MATERIAL_REPOSITORY.getName()]<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769654<>87<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : misc = getBaseDir().resolve(&amp;quot;misc&amp;quot;)<>1<>false< name="startLine">28< name="stepIndex">7<>
+<>2021-09-03T20:16:09<>1630667769656<>88<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : misc = getBaseDir().resolve(&amp;quot;misc&amp;quot;)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769656<>89<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : Files.createDirectories(misc)<>1<>false< name="startLine">29< name="stepIndex">8<>
+<>2021-09-03T20:16:09<>1630667769658<>90<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : Files.createDirectories(misc)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769658<>91<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : md = misc.resolve(&amp;quot;imageDiffsList.md&amp;quot;)<>1<>false< name="startLine">34< name="stepIndex">9<>
+<>2021-09-03T20:16:09<>1630667769658<>92<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : md = misc.resolve(&amp;quot;imageDiffsList.md&amp;quot;)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769659<>93<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : toFile().write(lister.toMarkdown(), &amp;quot;utf-8&amp;quot;)<>1<>false< name="startLine">35< name="stepIndex">10<>
+<>2021-09-03T20:16:09<>1630667769676<>94<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : toFile().write(lister.toMarkdown(), &amp;quot;utf-8&amp;quot;)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769676<>95<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : comment($md has been created)<>1<>false< name="startLine">36< name="stepIndex">11<>
+<>2021-09-03T20:16:09<>1630667769679<>96<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>/Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Materials/misc/imageDiffsList.md has been created<>2<>false<>
+<>2021-09-03T20:16:09<>1630667769680<>97<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : comment($md has been created)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769680<>98<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : csv = misc.resolve(&amp;quot;imageDiffsList.csv&amp;quot;)<>1<>false< name="startLine">41< name="stepIndex">12<>
+<>2021-09-03T20:16:09<>1630667769681<>99<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : csv = misc.resolve(&amp;quot;imageDiffsList.csv&amp;quot;)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769681<>100<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : toFile().write(lister.toCsv(), System.getProperty(&amp;quot;file.encoding&amp;quot;))<>1<>false< name="startLine">42< name="stepIndex">13<>
+<>2021-09-03T20:16:09<>1630667769687<>101<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : toFile().write(lister.toCsv(), System.getProperty(&amp;quot;file.encoding&amp;quot;))<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769688<>102<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : comment($csv has been created)<>1<>false< name="startLine">43< name="stepIndex">14<>
+<>2021-09-03T20:16:09<>1630667769690<>103<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>/Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Materials/misc/imageDiffsList.csv has been created<>2<>false<>
+<>2021-09-03T20:16:09<>1630667769691<>104<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : comment($csv has been created)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769696<>105<>PASSED<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>Test Cases/VT/reportImageDiffsList<>2<>false<>
+<>2021-09-03T20:16:09<>1630667769697<>106<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endTest<>1<>End Test Case : Test Cases/VT/reportImageDiffsList<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769706<>107<>PASSED<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>Call Test Case &amp;apos;Test Cases/VT/reportImageDiffsList&amp;apos; successfully<>1<>false< name="testops-method-name">com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase< name="testops-execution-stacktrace">
+<>
+<>2021-09-03T20:16:09<>1630667769708<>108<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : callTestCase(findTestCase(&amp;quot;VT/reportImageDiffsList&amp;quot;), [&amp;quot;imageDiffer&amp;quot;:imageDiffer])<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769708<>109<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : if (!(result))<>1<>false< name="startLine">30< name="stepIndex">8<>
+<>2021-09-03T20:16:09<>1630667769708<>110<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : markFailed(&amp;quot;One or more pairs of screenshot are different.&amp;quot;)<>2<>false< name="startLine">31< name="stepIndex">1<>
+<>2021-09-03T20:16:09<>1630667769718<>112<>FAILED<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>One or more pairs of screenshot are different.<>1<>false< name="testops-execution-stacktrace">com.kms.katalon.core.logging.testops.TestOpsLogHelper.handleFailedLogEntry(TestOpsLogHelper.java:120)
+com.kms.katalon.core.logging.KeywordLogger.logFailed(KeywordLogger.java:290)
+com.kms.katalon.core.logging.KeywordLogger.logFailed(KeywordLogger.java:268)
+com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:18)
+com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+ImageDiff_chronos.run(ImageDiff_chronos:31)
+<>
+<>2021-09-03T20:16:09<>1630667769721<>114<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : markFailed(&amp;quot;One or more pairs of screenshot are different.&amp;quot;)<>2<>false<>
+<>2021-09-03T20:16:09<>1630667769722<>115<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : if (!(result))<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769730<>117<>FAILED<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>Test Cases/CURA/ImageDiff_chronos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: One or more pairs of screenshot are different.
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at ImageDiff_chronos.run(ImageDiff_chronos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1630667546541.run(TempTestSuite1630667546541.groovy:36)
+<>
+<>com.kms.katalon.core.exception.StepFailedException: One or more pairs of screenshot are different.<>
+<>com.kms.katalon.core.util.KeywordUtil<>markFailed<>19<>
+<>com.kms.katalon.core.util.KeywordUtil$markFailed$0<>call<>
+<>ImageDiff_chronos<>run<>31<>
+<>com.kms.katalon.core.main.ScriptEngine<>run<>194<>
+<>com.kms.katalon.core.main.ScriptEngine<>runScriptAsRawText<>119<>
+<>com.kms.katalon.core.main.TestCaseExecutor<>runScript<>430<>
+<>com.kms.katalon.core.main.TestCaseExecutor<>doExecute<>421<>
+<>com.kms.katalon.core.main.TestCaseExecutor<>processExecutionPhase<>400<>
+<>com.kms.katalon.core.main.TestCaseExecutor<>accessMainPhase<>392<>
+<>com.kms.katalon.core.main.TestCaseExecutor<>execute<>273<>
+<>com.kms.katalon.core.main.TestSuiteExecutor<>accessTestCaseMainPhase<>202<>
+<>com.kms.katalon.core.main.TestSuiteExecutor<>accessTestSuiteMainPhase<>164<>
+<>com.kms.katalon.core.main.TestSuiteExecutor<>execute<>105<>
+<>com.kms.katalon.core.main.TestCaseMain<>startTestSuite<>185<>
+<>com.kms.katalon.core.main.TestCaseMain$startTestSuite$0<>call<>
+<>TempTestSuite1630667546541<>run<>36<>0<>false< name="failed.exception.stacktrace">com.kms.katalon.core.exception.StepFailedException: One or more pairs of screenshot are different.
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$0.call(Unknown Source)
+	at ImageDiff_chronos.run(ImageDiff_chronos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1630667546541.run(TempTestSuite1630667546541.groovy:36)
+< name="failed.exception.class">com.kms.katalon.core.exception.StepFailedException< name="failed.exception.message">One or more pairs of screenshot are different.<>
+<>2021-09-03T20:16:09<>1630667769733<>119<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start listener action : afterTestCase<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769733<>121<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : listener.afterTestCase(testCaseContext)<>1<>false< name="startLine">33< name="stepIndex">1<>
+<>2021-09-03T20:16:09<>1630667769734<>123<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : listener.afterTestCase(testCaseContext)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769734<>124<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End listener action : afterTestCase<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769735<>125<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endTest<>1<>End Test Case : Test Cases/CURA/ImageDiff_chronos<>0<>false< name="keywordsUsage">{
+  "web_ui": false,
+  "web_service": false,
+  "cucumber": false,
+  "builtin": true,
+  "mobile": false,
+  "windows": false,
+  "testng": false
+}<>
+<>2021-09-03T20:16:09<>1630667769739<>126<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start listener action : afterTestSuite<>0<>false<>
+<>2021-09-03T20:16:09<>1630667769740<>128<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start action : listener.afterTestSuite(testSuiteContext)<>1<>false< name="startLine">39< name="stepIndex">1<>
+<>2021-09-03T20:16:09<>1630667769756<>129<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>printing visited-urls report for Test Suites/CURA/chronos_exam/CURA_DevelopmentEnv/20210903_201226<>0<>false<>
+<>2021-09-03T20:16:09<>1630667769925<>130<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>GlobalVariable.VT_LAST_EXECUTED_TESTSUITE_ID is set to CURA/chronos_exam<>0<>false<>
+<>2021-09-03T20:16:09<>1630667769927<>131<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>GlobalVariable.VT_LAST_APPLIED_EXECUTION_PROFILE is set to CURA_DevelopmentEnv<>0<>false<>
+<>2021-09-03T20:16:09<>1630667769954<>133<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End action : listener.afterTestSuite(testSuiteContext)<>1<>false<>
+<>2021-09-03T20:16:09<>1630667769955<>134<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End listener action : afterTestSuite<>0<>false<>
+<>2021-09-03T20:16:09<>1630667769955<>135<>START<>com.kms.katalon.core.logging.XmlKeywordLogger<>startKeyword<>1<>Start listener action : exportKatalonReports<>0<>false<>
+<>2021-09-03T20:16:10<>1630667770248<>377<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>Start generating HTML report folder at: /Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Reports/20210903_201220/CURA/chronos_exam/20210903_201226...<>0<>false<>
+<>2021-09-03T20:16:10<>1630667770328<>378<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>HTML report generated<>0<>false<>
+<>2021-09-03T20:16:10<>1630667770329<>379<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>Start generating CSV report folder at: /Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Reports/20210903_201220/CURA/chronos_exam/20210903_201226...<>0<>false<>
+<>2021-09-03T20:16:10<>1630667770350<>380<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>CSV report generated<>0<>false<>
+<>2021-09-03T20:16:10<>1630667770351<>381<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>Start generating PDF report folder at: /Users/kazuakiurayama/katalon-workspace/VisualTestingInKatalonStudio/Reports/20210903_201220/CURA/chronos_exam/20210903_201226...<>0<>false<>
+<>2021-09-03T20:16:17<>1630667777179<>382<>INFO<>com.kms.katalon.core.logging.XmlKeywordLogger<>logMessage<>1<>PDF report generated<>0<>false<>
+<>2021-09-03T20:16:17<>1630667777211<>384<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endKeyword<>1<>End listener action : exportKatalonReports<>0<>false<>
+<>2021-09-03T20:16:17<>1630667777315<>385<>END<>com.kms.katalon.core.logging.XmlKeywordLogger<>endSuite<>1<>End Test Suite : Test Suites/CURA/chronos_exam<>0<>false

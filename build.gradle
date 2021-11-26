@@ -1,0 +1,18 @@
+plugins {
+    id 'groovy'
+    id 'java'
+    id 'idea'
+}
+
+group 'com.kazurayam'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:2.4.21'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+}

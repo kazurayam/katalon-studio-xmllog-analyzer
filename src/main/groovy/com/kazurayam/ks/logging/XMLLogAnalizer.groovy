@@ -119,7 +119,8 @@ class XMLLogAnalyzer {
     private Transformer createTransformerThatIgnoresDTD(InputSource xsltInputSource) {
         assert xsltInputSource != null : "xsltInputSource is null. do setXslt(Path p)"
         SAXSource saxSource = createSAXSourceThatIgnoresDTD(xsltInputSource)
-        TransformerFactory trf = TransformerFactory.newInstance()
+        TransformerFactory trf = TransformerFactory.newInstance(
+                "net.sf.saxon.TransformerFactoryImpl",null);
         println trf.getClass().getName()
         Transformer transformer = trf.newTransformer(saxSource)
         return transformer

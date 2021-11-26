@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kazurayam.ks.logging.XMLLogAnalyzerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-11-26T09:09:12" hostname="KAZUAKInoMacBook-Air-2.local" time="0.472">
+<testsuite name="com.kazurayam.ks.logging.XMLLogAnalyzerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-11-26T09:28:01" hostname="KAZUAKInoMacBook-Air-2.local" time="0.933">
   <properties/>
-  <testcase name="test_counter" classname="com.kazurayam.ks.logging.XMLLogAnalyzerTest" time="0.422"/>
-  <testcase name="test_identity_transform" classname="com.kazurayam.ks.logging.XMLLogAnalyzerTest" time="0.05"/>
-  <system-out><![CDATA[com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl
-com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl
+  <testcase name="test_counter" classname="com.kazurayam.ks.logging.XMLLogAnalyzerTest" time="0.802"/>
+  <testcase name="test_identity_transform" classname="com.kazurayam.ks.logging.XMLLogAnalyzerTest" time="0.13"/>
+  <system-out><![CDATA[net.sf.saxon.TransformerFactoryImpl
+net.sf.saxon.TransformerFactoryImpl
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

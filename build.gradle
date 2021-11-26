@@ -12,6 +12,9 @@ repositories {
 }
 
 dependencies {
+    // https://mvnrepository.com/artifact/net.sf.saxon/Saxon-HE
+    implementation group: 'net.sf.saxon', name: 'Saxon-HE', version: '10.6'
+
     implementation 'org.codehaus.groovy:groovy-all:2.4.21'
     testImplementation group: 'junit', name: 'junit', version: '4.12'
     testImplementation group: 'commons-io', name: 'commons-io', version: '2.11.0'

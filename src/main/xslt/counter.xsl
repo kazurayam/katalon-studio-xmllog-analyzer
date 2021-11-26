@@ -25,12 +25,27 @@
   ...
     -->
     <xsl:template match="/">
-        <xsl:apply-templates select="log"/>
+        <html>
+            <body>
+                <xsl:apply-templates select="log"/>
+            </body>
+        </html>
     </xsl:template>
 
+    <xsl:key name="level" match="/log/record/level" use="."/>
+
     <xsl:template match="log">
+        <h1>count by level</h1>
         <table>
-            <tr><th>count(record)</th><td><xsl:value-of select="count(record)"/></td></tr>
+            <tbody>
+                <xsl:for-each select="/log/record/level[generate-id()=generate-id(key('level',.)[1])]">
+                    <xsl:variable name="levelValue" select="."/>
+                    <tr>
+                        <td><xsl:value-of select="."/></td>
+                        <td><xsl:value-of select="count(/log/record/level[text()=$levelValue])"/></td>
+                    </tr>
+                </xsl:for-each>
+            </tbody>
         </table>
     </xsl:template>
 

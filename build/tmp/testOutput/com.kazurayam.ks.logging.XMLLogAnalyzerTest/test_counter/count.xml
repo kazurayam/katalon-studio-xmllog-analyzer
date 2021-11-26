@@ -1,6 +1,33 @@
-<table>
-   <tr>
-      <th>count(record)</th>
-      <td>128</td>
-   </tr>
-</table>
+<!DOCTYPE HTML><html>
+   <body>
+      <h1>count by level</h1>
+      <table>
+         <tbody>
+            <tr>
+               <td>START</td>
+               <td>35</td>
+            </tr>
+            <tr>
+               <td>RUN_DATA</td>
+               <td>4</td>
+            </tr>
+            <tr>
+               <td>INFO</td>
+               <td>50</td>
+            </tr>
+            <tr>
+               <td>END</td>
+               <td>35</td>
+            </tr>
+            <tr>
+               <td>PASSED</td>
+               <td>2</td>
+            </tr>
+            <tr>
+               <td>FAILED</td>
+               <td>2</td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>

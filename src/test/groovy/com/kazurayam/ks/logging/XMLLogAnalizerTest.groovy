@@ -23,6 +23,7 @@ public class XMLLogAnalyzerTest {
     static Path projectDir
     static Path xsltDir
     static Path reportsDir
+    static Path externalReportsDir
     static Path classOutputDir
     static TransformerFactory tf
 
@@ -33,7 +34,12 @@ public class XMLLogAnalyzerTest {
         projectDir = Paths.get(".")
         xsltDir = projectDir.resolve("src/main/xslt")
         reportsDir = projectDir.resolve("src/test/fixtures/Reports")
-        classOutputDir = projectDir.resolve("build/tmp/testOutput").resolve(XMLLogAnalyzerTest.class.getName())
+        externalReportsDir = Paths.get(System.getProperty("user.home"))
+                .resolve("katalon-workspace")
+                .resolve("ks_LogViewerSlowsDownTests_HowToPrevent")
+                .resolve("Reports");
+        classOutputDir = projectDir.resolve("build/tmp/testOutput")
+                .resolve(XMLLogAnalyzerTest.class.getName())
         if (Files.exists(classOutputDir)) {
             FileUtils.deleteDirectory(classOutputDir.toFile())
         }
@@ -80,10 +86,6 @@ public class XMLLogAnalyzerTest {
     @Test
     void test_XMLLogAnalyzerCounter_mega() {
         Path xslt = xsltDir.resolve('XMLLogAnalyzerCount.xsl')
-        Path externalReportsDir = Paths.get(System.getProperty("user.home"))
-                .resolve("katalon-workspace")
-                .resolve("ks_LogViewerSlowsDownTests_HowToPrevent")
-                .resolve("Reports");
         Path input = findXML(externalReportsDir, '20211126_101124')
         Path output = classOutputDir.resolve("test_XMLLogAnalyzerCounter_mega")
                 .resolve("analysis.xml")

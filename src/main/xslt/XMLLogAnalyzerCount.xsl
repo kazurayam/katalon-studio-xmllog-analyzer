@@ -1,7 +1,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="html" omit-xml-declaration="yes" indent="yes"/>
     <xsl:strip-space elements="*"/>
-    <xsl:include href="IdentityTransform.xsl"/>
 
     <!--
 <log>
@@ -25,41 +24,26 @@
   ...
     -->
     <xsl:template match="/">
-        <html>
-            <body>
-                <xsl:apply-templates select="log"/>
-            </body>
-        </html>
+        <xsl:apply-templates select="log" mode="count"/>
     </xsl:template>
 
     <xsl:key name="level" match="/log/record/level" use="."/>
     <xsl:key name="message" match="/log/record/message" use="."/>
 
-    <xsl:template match="log">
-        <h1>count by level</h1>
-        <table>
-            <tbody>
-                <xsl:for-each select="/log/record/level[generate-id()=generate-id(key('level',.)[1])]">
-                    <xsl:variable name="v" select="."/>
-                    <tr>
-                        <td><xsl:value-of select="."/></td>
-                        <td><xsl:value-of select="count(/log/record/level[text()=$v])"/></td>
-                    </tr>
-                </xsl:for-each>
-            </tbody>
-        </table>
-        <h1>count by message</h1>
-        <table>
-            <tbody>
-                <xsl:for-each select="/log/record/message[generate-id()=generate-id(key('message',.)[1])]">
-                    <xsl:variable name="v" select="."/>
-                    <tr>
-                        <td><xsl:value-of select="."/></td>
-                        <td><xsl:value-of select="count(/log/record/message[text()=$v])"/></td>
-                    </tr>
-                </xsl:for-each>
-            </tbody>
-        </table>
+    <xsl:template match="log" mode="count">
+        <div>
+            <table id="count_by_level">
+                <tbody>
+                    <xsl:for-each select="/log/record/level[generate-id()=generate-id(key('level',.)[1])]">
+                        <xsl:variable name="v" select="."/>
+                        <tr>
+                            <td><xsl:value-of select="."/></td>
+                            <td><xsl:value-of select="count(/log/record/level[text()=$v])"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </tbody>
+            </table>
+        </div>
     </xsl:template>
 
 </xsl:stylesheet>

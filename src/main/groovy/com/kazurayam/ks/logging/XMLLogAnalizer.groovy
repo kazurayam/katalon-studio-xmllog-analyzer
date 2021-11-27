@@ -13,9 +13,7 @@ import javax.xml.transform.Source
 import javax.xml.transform.Transformer
 import javax.xml.transform.TransformerFactory
 import javax.xml.transform.sax.SAXSource
-import javax.xml.transform.sax.SAXTransformerFactory
 import javax.xml.transform.stream.StreamResult
-import javax.xml.transform.stream.StreamSource
 import java.nio.charset.StandardCharsets
 
 import org.slf4j.Logger;
@@ -23,15 +21,13 @@ import org.slf4j.LoggerFactory;
 
 class XMLLogAnalyzer {
 
-    static private logger = LoggerFactory.getLogger(XMLLogAnalyzer.class);
+    static private Logger logger = LoggerFactory.getLogger(XMLLogAnalyzer.class);
 
     private InputSource xsltInputSource
     private InputSource xmlInputSource
     private Result outputResult
 
     static final enum Format {
-        MARKDOWN,
-        JSON,
         HTML
     }
 

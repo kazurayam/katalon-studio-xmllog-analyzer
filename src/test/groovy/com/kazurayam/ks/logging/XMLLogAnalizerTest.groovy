@@ -98,6 +98,39 @@ public class XMLLogAnalyzerTest {
         assert output.size() > 0
     }
 
+    @Test
+    void test_XMLLogAnalyzerReport() {
+        Path xslt = xsltDir.resolve("XMLLogAnalyzerReport.xsl")
+        Path input = findXML(reportsDir, "20210903_201226")
+        Path output = classOutputDir.resolve("test_XMLLogAnalyzerReport")
+                .resolve("report.xml")
+        Files.createDirectories(output.getParent())
+        //
+        XMLLogAnalyzer analyzer = new XMLLogAnalyzer()
+        analyzer.setXslt(xslt)
+        analyzer.setInput(input)
+        analyzer.setOutput(output)
+        analyzer.execute()
+        assert Files.exists(output)
+        assert output.size() > 0
+    }
+
+    @Test
+    void test_XMLLogAnalyzerMain() {
+        Path xslt = xsltDir.resolve("XMLLogAnalyzerMain.xsl")
+        Path input = findXML(reportsDir, "20210903_201226")
+        Path output = classOutputDir.resolve("test_XMLLogAnalyzerMain")
+                .resolve("main.xml")
+        Files.createDirectories(output.getParent())
+        //
+        XMLLogAnalyzer analyzer = new XMLLogAnalyzer()
+        analyzer.setXslt(xslt)
+        analyzer.setInput(input)
+        analyzer.setOutput(output)
+        analyzer.execute()
+        assert Files.exists(output)
+        assert output.size() > 0
+    }
 
     Path findXML(Path reportsDir, String timestamp) {
         List<Path> result = new ArrayList<Path>()

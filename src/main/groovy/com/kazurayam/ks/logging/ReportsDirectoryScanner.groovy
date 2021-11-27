@@ -18,7 +18,6 @@ class ReportsDirectoryScanner {
     private Path outputFile
 
     public static final String XMLLOG_FILENAME = "execution0.log"
-
     public static final DateTimeFormatter OUR_DATETIME_FORMATTER =
             DateTimeFormatter.ISO_OFFSET_DATE_TIME
 
@@ -52,13 +51,16 @@ class ReportsDirectoryScanner {
         // serialize the files into XML
         StringWriter sw = new StringWriter()
         MarkupBuilder mb = new MarkupBuilder(sw)
-        mb.logfiles() {
+        mb.reports() {
             files.each ({ Path p ->
-                logfile(
-                        'path': p.toString(),
-                        'size': p.size(),
-                        'lastModified': formatLastModified(p.toFile().lastModified())
-                )
+                bunch() {
+                    executionproperties()
+                    executionlog(
+                        'path' : p.toString() ,
+                        'size' : p.size() ,
+                        'lastModified' : formatLastModified(p.toFile().lastModified())
+                    )
+                }
             })
         }
         this.outputFile.text = sw.toString()
@@ -75,17 +77,17 @@ class ReportsDirectoryScanner {
     }
 
     static String formatLastModified(long timeMillis) {
-        Instant instant = Instant.ofEpochSecond(timeMillis)
+        Instant instant = Instant.ofEpochMilli(timeMillis)  // milliseconds -> seconds
         ZonedDateTime zonedDateTime =
                 ZonedDateTime.ofInstant(instant, ZoneId.systemDefault())
         String formatted = zonedDateTime.format(OUR_DATETIME_FORMATTER)
         return formatted
     }
 
-    static long parseLastModified(String lastModified) {
+    static long parseLastModified(String lastModifiedSeconds) {
         ZonedDateTime zonedDateTime =
-                ZonedDateTime.parse(lastModified, OUR_DATETIME_FORMATTER)
+                ZonedDateTime.parse(lastModifiedSeconds, OUR_DATETIME_FORMATTER)
         long epochSecond = zonedDateTime.toEpochSecond()
-        return epochSecond
+        return epochSecond * 1000 // second -> millisecond
     }
 }

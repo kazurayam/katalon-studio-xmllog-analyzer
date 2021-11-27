@@ -2,11 +2,14 @@ package com.kazurayam.ks.logging
 
 import org.apache.commons.io.FileUtils
 import org.junit.BeforeClass
+import org.junit.Ignore
 import org.junit.Test
 
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
+import java.time.ZoneId
+import java.time.ZonedDateTime
 
 class ReportsDirectoryScannerTest {
 
@@ -38,7 +41,7 @@ class ReportsDirectoryScannerTest {
         ReportsDirectoryScanner scanner = new ReportsDirectoryScanner()
         scanner.setReportsDir(this.reportsDir)
         Path output = classOutputDir.resolve("test_execute")
-                .resolve("logfiles.xml")
+                .resolve("reports.xml")
         Files.createDirectories(output.getParent())
         scanner.setOut(output)
         scanner.execute()
@@ -47,17 +50,43 @@ class ReportsDirectoryScannerTest {
     }
 
     @Test
+    void test_OUR_DATETIME_FORMATTER() {
+        ZonedDateTime now = ZonedDateTime.now(ZoneId.systemDefault())
+        assert now.format(ReportsDirectoryScanner.OUR_DATETIME_FORMATTER).startsWith("20")  // year 2021
+    }
+
+    @Test
     void test_formatLastModified() {
-        long epoch = System.currentTimeMillis()
+        ZonedDateTime now = ZonedDateTime.now(ZoneId.systemDefault())
+        long epoch = now.toInstant().getEpochSecond() * 1000
         String formatted = ReportsDirectoryScanner.formatLastModified(epoch)
-        assert formatted != null
+        assert formatted.startsWith("20")  // year 2021
+    }
+
+    @Test
+    void test_formatLastModified_file() {
+        Path buildGradle = Paths.get("build.gradle")
+        long lastModified = buildGradle.toFile().lastModified()
+        String formatted = ReportsDirectoryScanner.formatLastModified(lastModified)
+        assert formatted.startsWith("20")  // year 2021
+    }
+
+    @Ignore
+    @Test
+    void test_compare_timestamp_of_file_and_system_clock() {
+        Path buildGradle = Paths.get("build.gradle")
+        long lastModified = buildGradle.toFile().lastModified()
+        ZonedDateTime now = ZonedDateTime.now(ZoneId.systemDefault())
+        long epoch = now.toInstant().getEpochSecond() * 1000
+        assert Math.abs(lastModified - epoch) < 100000000
     }
 
     @Test
     void test_parseLastModified() {
-        long epoch = System.currentTimeMillis()
-        String formatted = ReportsDirectoryScanner.formatLastModified(epoch)
+        ZonedDateTime now = ZonedDateTime.now(ZoneId.systemDefault())
+        long epochMillis = now.toInstant().getEpochSecond() * 1000
+        String formatted = ReportsDirectoryScanner.formatLastModified(epochMillis)
         long parseResult = ReportsDirectoryScanner.parseLastModified(formatted)
-        assert parseResult == epoch
+        assert parseResult == epochMillis
     }
 }

@@ -41,7 +41,7 @@ public class XMLLogAnalyzerTest {
         tf = TransformerFactory.newInstance()
     }
 
-    //@Ignore
+    @Ignore
     @Test
     void test_identity_transform() {
         Path xslt = xsltDir.resolve("identity-transform.xsl")
@@ -59,10 +59,10 @@ public class XMLLogAnalyzerTest {
     }
 
     @Test
-    void test_counter() {
-        Path xslt = xsltDir.resolve("counter.xsl")
+    void test_analyzer() {
+        Path xslt = xsltDir.resolve("analyzer.xsl")
         Path input = findXML(reportsDir, "20210903_201226")
-        Path output = classOutputDir.resolve("test_counter").resolve("count.xml")
+        Path output = classOutputDir.resolve("test_analyzer").resolve("analysis.xml")
         Files.createDirectories(output.getParent())
         //
         XMLLogAnalyzer analyzer = new XMLLogAnalyzer()
@@ -74,11 +74,16 @@ public class XMLLogAnalyzerTest {
         assert output.size() > 0
     }
 
+    //@Ignore
     @Test
-    void test_counter_mega() {
-        Path xslt = xsltDir.resolve('counter.xsl')
-        Path input = findXML(reportsDir, '20211126_101124')
-        Path output = classOutputDir.resolve("test_counter_mega").resolve("count.xml")
+    void test_analyzer_mega() {
+        Path xslt = xsltDir.resolve('analyzer.xsl')
+        Path externalReportsDir = Paths.get(System.getProperty("user.home"))
+                .resolve("katalon-workspace")
+                .resolve("ks_LogViewerSlowsDownTests_HowToPrevent")
+                .resolve("Reports");
+        Path input = findXML(externalReportsDir, '20211126_101124')
+        Path output = classOutputDir.resolve("test_analyzer_mega").resolve("analysis.xml")
         Files.createDirectories(output.getParent())
         //
         XMLLogAnalyzer analyzer = new XMLLogAnalyzer()
@@ -109,9 +114,5 @@ public class XMLLogAnalyzerTest {
         return result[0]
     }
 
-
-    String identityTemplates() {
-        return ""
-    }
 }
 

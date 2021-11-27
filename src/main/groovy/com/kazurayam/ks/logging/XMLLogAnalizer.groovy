@@ -18,7 +18,12 @@ import javax.xml.transform.stream.StreamResult
 import javax.xml.transform.stream.StreamSource
 import java.nio.charset.StandardCharsets
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 class XMLLogAnalyzer {
+
+    static private logger = LoggerFactory.getLogger(XMLLogAnalyzer.class);
 
     private InputSource xsltInputSource
     private InputSource xmlInputSource
@@ -121,7 +126,7 @@ class XMLLogAnalyzer {
         SAXSource saxSource = createSAXSourceThatIgnoresDTD(xsltInputSource)
         TransformerFactory trf = TransformerFactory.newInstance(
                 "net.sf.saxon.TransformerFactoryImpl",null);
-        println trf.getClass().getName()
+        logger.info("TransformerFactory class is : " + trf.getClass().getName())
         Transformer transformer = trf.newTransformer(saxSource)
         return transformer
     }

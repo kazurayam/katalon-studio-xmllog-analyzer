@@ -16,6 +16,12 @@ dependencies {
     implementation group: 'net.sf.saxon', name: 'Saxon-HE', version: '10.6'
 
     implementation 'org.codehaus.groovy:groovy-all:2.4.21'
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.32'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.32'
+
     testImplementation group: 'junit', name: 'junit', version: '4.12'
     testImplementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
 }
